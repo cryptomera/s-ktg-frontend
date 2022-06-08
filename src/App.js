@@ -1,4 +1,5 @@
 import Header from "./components/common/Header";
+import MobileHeader from "./components/common/MobileHeader";
 import {
   BrowserRouter,
   Routes,
@@ -11,17 +12,22 @@ import Timeline from "./components/Timeline";
 
 function App() {
   return (
-    <div className="px-24">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="xl:invisible min-w-screen max-w-full">
+        <MobileHeader />
+      </div>
+      <div className="invisible xl:visible">
         <Header />
+      </div>
+      <div className="px-44">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/manifesto" element={<Manifesto />} />
           <Route path="/thestudios" element={<Studios />} />
           <Route path="/timeline" element={<Timeline />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
