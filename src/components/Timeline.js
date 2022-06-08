@@ -8,8 +8,8 @@ import sandglass from '../assets/images/sandglass.png';
 
 const Timeline = () => {
   return (
-    <div className="grid grid-cols-3 gap-1 p-12 pt-36">
-      <div className="flex items-center cursor-pointer bg-amber-50 hover:bg-red-400">
+    <div className="grid xl:grid-cols-3 gap-1 xl:p-12 xl:pt-36">
+      <div className="flex w-full items-center cursor-pointer bg-amber-50 hover:bg-red-400">
         <div className="w-1/2 p-10">
           <img src={brain}/>
         </div>
