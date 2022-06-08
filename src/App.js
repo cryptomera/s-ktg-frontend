@@ -13,7 +13,7 @@ import Timeline from "./components/Timeline";
 function App() {
   return (
     <BrowserRouter>
-      <div className="xl:invisible min-w-screen max-w-full">
+      <div className="xl:invisible xl:h-0 min-w-screen max-w-full">
         <MobileHeader />
       </div>
       <div className="invisible xl:visible">

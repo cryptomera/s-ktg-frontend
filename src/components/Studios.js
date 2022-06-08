@@ -34,9 +34,9 @@ const creators = [
 ];
 const Studios = () => {
   return (
-    <div className="flex">
-      <div className="w-1/2 mt-24" >
-        <div className="overflow-y-scroll" style={{ height: '500px'}}>
+    <div className="xl:flex">
+      <div className="xl:w-1/2 w-full xl:mt-24" >
+        <div className="overflow-y-scroll h-2/5">
           <div className="uppercase text-6xl font-bold">utility</div>
           <div className="uppercase font-bold text-2xl mt-12 text-orange-400">community</div>
           <div className="mt-12 pr-24 text-justify">
@@ -47,7 +47,7 @@ const Studios = () => {
             From fueling the utilities created by Jikan Studios, to enabling our community members to choose their own path within our roadmap. $TROOP will be the token that powers the Jikan ecosystem.
           </div>
           <div className="uppercase text-6xl font-bold my-12">creators</div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid xl:grid-cols-2 grid-cols-1 gap-2">
             {
               creators.map((creator, i) => (
                 <div key={i}>
@@ -57,7 +57,7 @@ const Studios = () => {
             }
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 mt-2 -ml-5">
+        <div className="grid grid-cols-2 gap-2 mt-2 -ml-5 invisible xl:visible">
           <div className="flex">
             <div className="w-1/2"></div>
             <div className="w-1/2 bg-red-400 h-2"></div>
@@ -68,7 +68,7 @@ const Studios = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex">
+      <div className="w-1/2 flex invisible xl:visible">
         <div className="w-1/2"></div>
         <div className="w-1/2 -ml-24">
           <img src={sit} />
