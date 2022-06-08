@@ -19,7 +19,7 @@ function App() {
       <div className="invisible xl:visible">
         <Header />
       </div>
-      <div className="px-44">
+      <div className="xl:px-44 px-12">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/manifesto" element={<Manifesto />} />

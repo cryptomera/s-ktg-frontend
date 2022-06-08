@@ -4,8 +4,8 @@ import hat from '../assets/images/hat.png';
 
 const Manifesto = () => {
   return (
-    <div className="flex">
-      <div className="w-1/3 mt-24">
+    <div className="xl:flex">
+      <div className="xl:w-1/3 xl:mt-24 w-full">
         <div className="uppercase font-bold text-4xl">manifesto</div>
         <div className="mt-12">
           In all of time, I have found fortune.
@@ -36,11 +36,11 @@ const Manifesto = () => {
           Why predict the future, when Jikan can create it?
         </div>
       </div>
-      <div className="flex w-2/3">
-        <div className="ml-24">
+      <div className="flex xl:w-2/3 w-full justify-center">
+        <div className="xl:ml-24 xl:w-1/2 w-0 h-0 invisible xl:visible">
           <img src={robot} />
         </div>
-        <div className="-ml-48">
+        <div className="xl:-ml-48 xl:w-1/2 w-full">
           <img src={hat} />
         </div>
       </div>
